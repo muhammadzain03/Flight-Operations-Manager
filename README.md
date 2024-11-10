@@ -1,4 +1,4 @@
-# ✈️ Flight Management Program
+# ✈️ Flight Manager
 
 The Flight Management Program is a comprehensive C++ application for managing flights, passengers, seats, and airline information. Designed to efficiently organize essential airline data, this program provides a streamlined approach to handling various airline and passenger management operations.
 
