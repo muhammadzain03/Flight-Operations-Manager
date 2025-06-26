@@ -3,7 +3,7 @@ Masterclass README for Flight Operations Manager
 -->
 
 <a name="flight-operations-manager"></a>
-# ✈️ Flight Operations Manager
+<h1 align="center">✈️ Flight Operations Manager</h1>
 
 <div align="center">
 
@@ -233,6 +233,6 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 Made with ❤️ using Cursor, Windsurf, and the power of modern C++/Qt
 
-[⬆ Back to Top](#-flight-operations-manager)
+[⬆ Back to Top](#flight-operations-manager)
 
 </div> 
