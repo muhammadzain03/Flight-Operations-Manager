@@ -1,41 +1,224 @@
+<!--
+Masterclass README for Flight Operations Manager
+-->
+
 # ✈️ Flight Operations Manager
 
-The Flight Management Program is a comprehensive C++ application for managing flights, passengers, seats, and airline information. Designed to efficiently organize essential airline data, this program provides a streamlined approach to handling various airline and passenger management operations.
+<div align="center">
 
-## 📂 Project Structure
+![Flight Operations Manager](https://img.shields.io/badge/Status-Active-success)
+![C++](https://img.shields.io/badge/C++-17-blue.svg)
+![Qt](https://img.shields.io/badge/Qt-6.x%20|%205.15-41CD52.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![CMake](https://img.shields.io/badge/CMake-3.16+-yellow.svg)
 
-The main files in this project include:
+*A modern, robust, and user-friendly flight management system for airlines and travel agencies.*
 
-- **Airline.h / Airline.cpp**: Defines the Airline class, handling airline-specific operations and attributes.
-- **Flight.h / Flight.cpp**: Manages individual flight details and operations, including flight numbers, destinations, and schedules.
-- **Passenger.h / Passenger.cpp**: Manages passenger details, including name, ID, and assigned flight.
-- **Seat.h / Seat.cpp**: Manages seat arrangements within a flight, including availability and seat assignments.
-- **Main.cpp**: The main driver file to execute the program, integrating all classes to perform airline operations.
-- **flight_info.txt**: A data file with sample flight details, used to initialize the program with predefined data.
-
-## 🚀 Getting Started
-
-To run the project locally:
-
-1. **Clone or Download** this repository.
-2. **Compile the Code**: Use a C++ compiler, such as `g++`, to compile the code. Run the following command:
-
-   ```bash
-   g++ Main.cpp Flight.cpp Passenger.cpp Seat.cpp Airline.cpp -o FlightManagement
-   ./FlightManagement
-   ```
-
-## ✨ Features
-
-- **Airline Management**: Supports managing multiple airlines, including details such as fleet information and operational status.
-- **Flight Management**: Manages flights for each airline, including schedules, routes, and availability.
-- **Passenger Records**: Handles passenger information for flights, allowing you to add, update, and view passenger details.
-- **Seat Allocation**: Efficiently assigns and manages seats for passengers on each flight.
-
-## 📄 License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
+</div>
 
 ---
 
-Feel free to explore, modify, and expand this program to suit your needs. Contributions are welcome!
+## 📋 Table of Contents
+- [Project Evolution](#project-evolution)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [System Requirements](#system-requirements)
+- [Installation Guide](#installation-guide)
+- [Usage Guide](#usage-guide)
+- [Architecture](#architecture)
+- [Data Management](#data-management)
+- [Development Journey](#development-journey)
+- [Testing & Quality Assurance](#testing--quality-assurance)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+---
+
+## 🚀 Project Evolution
+
+**Flight Operations Manager** began as a university course project for ENSF-337 (Programming Fundamentals for Software and Computer). What started as a basic assignment has since been transformed into a professional, feature-rich application—showcasing modern C++/Qt development, advanced UI/UX, and robust data management. This journey was powered by hands-on coding, iterative design, and AI-assisted development using Cursor and Windsurf.
+
+---
+
+## ✨ Features
+
+- **Flight Management**: Create, edit, and manage flights with detailed scheduling and route info.
+- **Passenger Management**: Add, edit, and search passengers; track bookings and special requests.
+- **Interactive Seat Map**: Real-time seat selection, class differentiation, and vibrant visual feedback.
+- **Data Visualization**: Dynamic reports for flights, passengers, and revenue.
+- **Modern UI/UX**: Professional, accessible, and consistent design with live validation and tooltips.
+- [Dual Storage](#data-management): File-based (JSON/CSV) and SQLite database support.
+- **Export & Reports**: Generate and export reports in multiple formats.
+- **Accessibility**: Keyboard navigation, tooltips, and high-contrast visuals.
+
+---
+
+## 🖼️ Screenshots
+
+### Main Window
+![Main Window](docs/screenshots/Mainwindow.png)
+*The central dashboard for managing flights and passengers.*
+
+### Flight Dialog
+![Flight Dialog](docs/screenshots/FlightDialog.png)
+*Dialog for creating and editing flight details.*
+
+### Passenger Dialog
+![Passenger Dialog](docs/screenshots/PassengerDialog.png)
+*Dialog for adding/editing passengers, with integrated seat map.*
+
+### Interactive Seat Map
+![Seat Map](docs/screenshots/SeatMapEconomy.png)
+*Vibrant, interactive seat map with class and selection highlights.*
+
+### Flight Report
+![Flight Report](docs/screenshots/FlightReport.png)
+*Detailed flight report with export options.*
+
+### Passenger Report
+![Passenger Report](docs/screenshots/PassengerReport.png)
+*Comprehensive passenger report for selected flights.*
+
+---
+
+## 🛠️ System Requirements
+
+**Software:**
+- Windows 10/11, macOS 10.15+, or Linux (Ubuntu 20.04+)
+- CMake 3.16+
+- Qt 5.15+ or Qt 6.x
+- C++17 compatible compiler
+- Git
+
+**Hardware:**
+- Minimum: 4GB RAM, Dual-core CPU, 1GB disk
+- Recommended: 8GB RAM, Quad-core CPU, 2GB disk, 1920x1080 display
+
+---
+
+## 📥 Installation Guide
+
+1. **Install Qt Framework**
+   ```bash
+   # Windows
+   winget install Qt.Qt
+   # macOS
+   brew install qt
+   # Ubuntu
+   sudo apt install qt6-base-dev
+   ```
+2. **Install CMake**
+   ```bash
+   # Windows
+   winget install Kitware.CMake
+   # macOS
+   brew install cmake
+   # Ubuntu
+   sudo apt install cmake
+   ```
+3. **Clone and Build**
+   ```bash
+   git clone https://github.com/yourusername/Flight_Operations_Manager.git
+   cd Flight_Operations_Manager
+   mkdir build && cd build
+   cmake ..
+   cmake --build .
+   ```
+4. **Run the Application**
+   - Launch the built executable from the build directory.
+
+---
+
+## 📚 Usage Guide
+
+- **First Launch:** Configure airline info and database settings.
+- **Managing Flights:** Use the main window to add/edit/delete flights.
+- **Passenger Operations:** Add, edit, or remove passengers; assign seats via the seat map.
+- **Seat Selection:** Click on available seats in the map for real-time assignment.
+- **Reports:** Generate and export flight and passenger reports from the main window.
+
+---
+
+## 🏗 Architecture
+
+```
+Flight_Operations_Manager/
+├── src/
+│   ├── gui/               # GUI implementations
+│   ├── models/            # Data models
+│   └── database/          # Database handlers
+├── include/               # Header files
+├── docs/screenshots/      # Screenshots for documentation
+└── ...
+```
+
+**Design Patterns:** Singleton (DB), Observer (UI), Factory, Strategy, Command.
+
+---
+
+## 💾 Data Management
+
+- **File-based Storage:** JSON/CSV for easy backup and export.
+- **SQLite Database:** For robust, scalable data management.
+- **Export:** Reports and data can be exported to CSV and TXT.
+
+---
+
+## 🛠️ Development Journey
+
+This project's transformation from a simple course assignment to a professional-grade application was made possible by:
+
+- **Iterative Design:** Multiple cycles of feature addition, UI/UX polish, and bug fixing.
+- **AI-Assisted Development:** Leveraging Cursor and Windsurf for:
+  - Debugging complex seat map and UI issues
+  - Refactoring and code cleanup
+  - Implementing accessibility and modern design
+  - Live input validation, tooltips, and keyboard navigation
+  - Ensuring data consistency and robust error handling
+- **Collaboration:** The assistant (AI) provided targeted fixes, design suggestions, and code reviews, resulting in a visually consistent, accessible, and reliable product.
+
+---
+
+## 🧪 Testing & Quality Assurance
+
+- **Manual Testing:** All features tested across Windows and Linux.
+- **Automated Tests:** (If present) Run with `ctest` in the build directory.
+- **Code Review:** Continuous review and improvement using AI tools.
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+**Coding Standards:**
+- C++17 best practices
+- Qt conventions
+- Document public APIs
+- Write tests for new features
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+## 📞 Contact
+
+- **Project Maintainer:** Muhammad Zain
+- **Email:** muhammadzain0476@gmail.com
+- **GitHub Issues:** For bug reports and feature requests
+
+<div align="center">
+
+Made with ❤️ using Cursor, Windsurf, and the power of modern C++/Qt
+
+[⬆ Back to Top](#-flight-operations-manager)
+
+</div> 
