@@ -2,6 +2,7 @@
 Masterclass README for Flight Operations Manager
 -->
 
+<a name="flight-operations-manager"></a>
 # ✈️ Flight Operations Manager
 
 <div align="center">
@@ -35,12 +36,14 @@ Masterclass README for Flight Operations Manager
 
 ---
 
+<a name="project-evolution"></a>
 ## 🚀 Project Evolution
 
 **Flight Operations Manager** began as a university course project for ENSF-337 (Programming Fundamentals for Software and Computer). What started as a basic assignment has since been transformed into a professional, feature-rich application—showcasing modern C++/Qt development, advanced UI/UX, and robust data management. This journey was powered by hands-on coding, iterative design, and AI-assisted development using Cursor and Windsurf.
 
 ---
 
+<a name="features"></a>
 ## ✨ Features
 
 - **Flight Management**: Create, edit, and manage flights with detailed scheduling and route info.
@@ -54,6 +57,7 @@ Masterclass README for Flight Operations Manager
 
 ---
 
+<a name="screenshots"></a>
 ## 🖼️ Screenshots
 
 ### Main Window
@@ -82,6 +86,7 @@ Masterclass README for Flight Operations Manager
 
 ---
 
+<a name="system-requirements"></a>
 ## 🛠️ System Requirements
 
 **Software:**
@@ -97,6 +102,7 @@ Masterclass README for Flight Operations Manager
 
 ---
 
+<a name="installation-guide"></a>
 ## 📥 Installation Guide
 
 1. **Install Qt Framework**
@@ -130,6 +136,7 @@ Masterclass README for Flight Operations Manager
 
 ---
 
+<a name="usage-guide"></a>
 ## 📚 Usage Guide
 
 - **First Launch:** Configure airline info and database settings.
@@ -140,6 +147,7 @@ Masterclass README for Flight Operations Manager
 
 ---
 
+<a name="architecture"></a>
 ## 🏗 Architecture
 
 ```
@@ -157,6 +165,7 @@ Flight_Operations_Manager/
 
 ---
 
+<a name="data-management"></a>
 ## 💾 Data Management
 
 - **File-based Storage:** JSON/CSV for easy backup and export.
@@ -165,6 +174,7 @@ Flight_Operations_Manager/
 
 ---
 
+<a name="development-journey"></a>
 ## 🛠️ Development Journey
 
 This project's transformation from a simple course assignment to a professional-grade application was made possible by:
@@ -180,6 +190,7 @@ This project's transformation from a simple course assignment to a professional-
 
 ---
 
+<a name="testing--quality-assurance"></a>
 ## 🧪 Testing & Quality Assurance
 
 - **Manual Testing:** All features tested across Windows and Linux.
@@ -188,6 +199,7 @@ This project's transformation from a simple course assignment to a professional-
 
 ---
 
+<a name="contributing"></a>
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -203,12 +215,14 @@ This project's transformation from a simple course assignment to a professional-
 
 ---
 
+<a name="license"></a>
 ## 📄 License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
+<a name="contact"></a>
 ## 📞 Contact
 
 - **Project Maintainer:** Muhammad Zain
