@@ -125,7 +125,7 @@ Masterclass README for Flight Operations Manager
    ```
 3. **Clone and Build**
    ```bash
-   git clone https://github.com/yourusername/Flight_Operations_Manager.git
+   git clone https://github.com/muhammadzain03/Flight-Operations-Manager.git
    cd Flight_Operations_Manager
    mkdir build && cd build
    cmake ..
